@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.calculator {
+  width: 320px;
+  margin: 50px auto;
+}
+.screen {
+  padding: 17px 10px;
+  text-align: right;
+  margin: 0 2px;
+  border: 1px solid #efefef;
+  font-size: 29px;
+  border-radius: 3px;
+}
+.key-pad {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.key-pad .key {
+  cursor: pointer;
+  width: calc(25% - 4px);
+  text-align: center;
+  background: #8bc34a;
+  color: #fff;
+  padding: 25px 20px;
+  margin: 2px;
+  border-radius: 2px;
+}
+.key-pad .key-width-half {
+  width: calc(50% - 4px);
+}
+.key-pad .function-key {
+  background: #29b6f6;
+}
+.key-pad .operation-key {
+  background: #ff7043;
+}
